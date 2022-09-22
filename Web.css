@@ -1,0 +1,43 @@
+.item-a { grid-area: header; background-color: #00b0FF; color: white;font-family: "Lucida Console", "Courier New", monospace;}
+.item-b { grid-area: username;}
+.item-c { grid-area: password;}
+.item-d { grid-area: button;}
+.item-e { grid-area: footer; background-color: #00b0FF;color: white;font-family: "Lucida Console", "Courier New", monospace;}
+.item-f { grid-area: image;font-family: "Lucida Console", "Courier New", monospace;}
+
+
+
+.container {
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 10% 55% 10% 10% 10% 5%;
+grid-template-areas:
+"header"
+"image"
+"username"
+"password"
+"button"
+"footer";
+}
+
+.button {
+  background-color: #00b0FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;  
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+
